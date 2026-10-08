@@ -1,6 +1,6 @@
-# ButtonCraft v1.2 — Button Gallery & Studio
+# ButtonCraft v1.3 — Button Gallery & Studio
 
-React 19 + Vite + Tailwind CSS 4. Gallery 44 interactive presets, code export, favorites and saved variants.
+React 19 + Vite + Tailwind CSS 4. Gallery 64 interactive presets, code export, favorites and saved variants.
 
 ## Local development
 
@@ -12,7 +12,7 @@ npm run qa
 
 ## Architecture
 
-- `src/presets/`: one independent TSX file per button preset.
+- `src/presets/`: individual preset modules plus grouped signature collections for closely related releases.
 - `src/data/buttonGallery.tsx`: preset registry.
 - `src/button-engine/enhance.ts`: shared export and controls normalization.
 - `src/components/`: gallery, customizer, favorites.
@@ -25,6 +25,12 @@ The original designs rely on custom React renderers; exported HTML/CSS uses shar
 ## Install troubleshooting (v1.1.1)
 
 Requires Node >=20.19 and npm >=10. Use `npm install`, then `npm run qa`. See `docs/V1.1.1-INSTALL-FIX.md` for environment and verification details.
+
+## What's new (v1.3)
+
+- Added 20 signature button presets, increasing the gallery from 44 to 64 styles.
+- New designs span cyberpunk, glass, tactile 3D, brutalist, neumorphic, aurora, luxury, retro, micro-interaction and playful categories.
+- All new presets participate in the same ButtonCraft customization/export contract and QA suite.
 
 ## What's new (v1.2)
 
