@@ -43,6 +43,7 @@ import { preset as tech_radar_sweep_lock } from '../presets/tech-radar-sweep-loc
 import { preset as material_fab_elevation_ripple } from '../presets/material-fab-elevation-ripple';
 import { preset as material_outlined_underglow } from '../presets/material-outlined-underglow';
 import { v13SignaturePresets } from '../presets/v13-signature-collection';
+import { v14SignaturePresets } from '../presets/v14-signature-collection';
 import { enhancePreset } from '../button-engine/enhance';
 export const BUTTON_GALLERY = [
   enhancePreset(cyber_glitch_polygon),
@@ -90,4 +91,5 @@ export const BUTTON_GALLERY = [
   enhancePreset(material_fab_elevation_ripple),
   enhancePreset(material_outlined_underglow),
   ...v13SignaturePresets.map(enhancePreset),
+  ...v14SignaturePresets.map(enhancePreset),
 ];
