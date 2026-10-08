@@ -188,7 +188,7 @@ export default function App() {
             <div className="flex items-center justify-center flex-wrap gap-x-4 gap-y-2 pt-3 text-xs text-slate-400">
               <span className="flex items-center gap-1.5 text-slate-300">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                64+ Phong cách tuyển chọn
+                84+ Phong cách tuyển chọn
               </span>
               <span aria-hidden="true" className="opacity-40">·</span>
               <span className="flex items-center gap-1.5 text-slate-300">
