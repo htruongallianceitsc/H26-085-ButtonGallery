@@ -3,9 +3,9 @@ import { BUTTON_GALLERY } from '../data/buttonGallery';
 import { defaultParams } from './enhance';
 
 describe('ButtonCraft preset/export contract', () => {
-  it('contains 24 uniquely named presets', () => {
-    expect(BUTTON_GALLERY).toHaveLength(24);
-    expect(new Set(BUTTON_GALLERY.map(x => x.id)).size).toBe(24);
+  it('contains 44 uniquely named presets', () => {
+    expect(BUTTON_GALLERY).toHaveLength(44);
+    expect(new Set(BUTTON_GALLERY.map(x => x.id)).size).toBe(44);
   });
   for (const preset of BUTTON_GALLERY) {
     it(`${preset.id}: exports escaped content, state and configured icon`, () => {

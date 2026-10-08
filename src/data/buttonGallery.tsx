@@ -22,6 +22,26 @@ import { preset as scifi_shield_generator } from '../presets/scifi-shield-genera
 import { preset as vaporwave_retro_sunset } from '../presets/vaporwave-retro-sunset';
 import { preset as ripple_material_fluid } from '../presets/ripple-material-fluid';
 import { preset as tech_ghost_brackets } from '../presets/tech-ghost-brackets';
+import { preset as cyberpunk_circuit_trace_rgb } from '../presets/cyberpunk-circuit-trace-rgb';
+import { preset as cyberpunk_hex_radar_scan } from '../presets/cyberpunk-hex-radar-scan';
+import { preset as glass_liquid_ios_pill } from '../presets/glass-liquid-ios-pill';
+import { preset as glass_frosted_dew_outline } from '../presets/glass-frosted-dew-outline';
+import { preset as skeuo_chunky_plastic_press } from '../presets/skeuo-chunky-plastic-press';
+import { preset as skeuo_chrome_metallic_dome } from '../presets/skeuo-chrome-metallic-dome';
+import { preset as brutalist_comic_halftone_pop } from '../presets/brutalist-comic-halftone-pop';
+import { preset as neumorphic_dark_glow_inset } from '../presets/neumorphic-dark-glow-inset';
+import { preset as neumorphic_light_flat_lift } from '../presets/neumorphic-light-flat-lift';
+import { preset as aurora_mesh_blob_morph } from '../presets/aurora-mesh-blob-morph';
+import { preset as luxury_serif_engraved_border } from '../presets/luxury-serif-engraved-border';
+import { preset as retro_crt_scanline_flicker } from '../presets/retro-crt-scanline-flicker';
+import { preset as retro_cassette_tape_label } from '../presets/retro-cassette-tape-label';
+import { preset as interactive_magnetic_cursor_pull } from '../presets/interactive-magnetic-cursor-pull';
+import { preset as interactive_elastic_drag_snap } from '../presets/interactive-elastic-drag-snap';
+import { preset as playful_balloon_inflate_pop } from '../presets/playful-balloon-inflate-pop';
+import { preset as playful_doodle_wobble_border } from '../presets/playful-doodle-wobble-border';
+import { preset as tech_radar_sweep_lock } from '../presets/tech-radar-sweep-lock';
+import { preset as material_fab_elevation_ripple } from '../presets/material-fab-elevation-ripple';
+import { preset as material_outlined_underglow } from '../presets/material-outlined-underglow';
 import { enhancePreset } from '../button-engine/enhance';
 export const BUTTON_GALLERY = [
   enhancePreset(cyber_glitch_polygon),
@@ -48,4 +68,24 @@ export const BUTTON_GALLERY = [
   enhancePreset(vaporwave_retro_sunset),
   enhancePreset(ripple_material_fluid),
   enhancePreset(tech_ghost_brackets),
+  enhancePreset(cyberpunk_circuit_trace_rgb),
+  enhancePreset(cyberpunk_hex_radar_scan),
+  enhancePreset(glass_liquid_ios_pill),
+  enhancePreset(glass_frosted_dew_outline),
+  enhancePreset(skeuo_chunky_plastic_press),
+  enhancePreset(skeuo_chrome_metallic_dome),
+  enhancePreset(brutalist_comic_halftone_pop),
+  enhancePreset(neumorphic_dark_glow_inset),
+  enhancePreset(neumorphic_light_flat_lift),
+  enhancePreset(aurora_mesh_blob_morph),
+  enhancePreset(luxury_serif_engraved_border),
+  enhancePreset(retro_crt_scanline_flicker),
+  enhancePreset(retro_cassette_tape_label),
+  enhancePreset(interactive_magnetic_cursor_pull),
+  enhancePreset(interactive_elastic_drag_snap),
+  enhancePreset(playful_balloon_inflate_pop),
+  enhancePreset(playful_doodle_wobble_border),
+  enhancePreset(tech_radar_sweep_lock),
+  enhancePreset(material_fab_elevation_ripple),
+  enhancePreset(material_outlined_underglow),
 ];

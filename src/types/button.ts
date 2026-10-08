@@ -9,7 +9,8 @@ export type ButtonCategory =
   | 'aurora-gradient'
   | 'micro-interactive'
   | 'playful-bubbly'
-  | 'tech-outline';
+  | 'tech-outline'
+  | 'material-elevation';
 
 export type CategoryFilter = ButtonCategory | 'all';
 

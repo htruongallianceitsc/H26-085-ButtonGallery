@@ -85,4 +85,11 @@ export const CATEGORIES: CategoryInfo[] = [
     description: 'Khung ngắm HUD, dấu ngoặc terminal prompt, nét đứt xung điện',
     iconName: 'Terminal',
   },
+  {
+    id: 'material-elevation',
+    name: 'Material Elevation',
+    enName: 'Material Elevation & Ripple',
+    description: 'Đổ bóng phân cấp theo chuẩn Material Design, ripple lan tâm và nút FAB nổi khối',
+    iconName: 'Layers',
+  },
 ];
