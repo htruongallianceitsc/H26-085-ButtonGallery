@@ -75,7 +75,7 @@ export function FavoritesDrawer({
       await navigator.clipboard.writeText(generateCombinedCss());
       setCopiedBundle(true);
       setTimeout(() => setCopiedBundle(false), 2000);
-    } catch {}
+    } catch { /* clipboard unavailable */ }
   };
 
   const handleDownloadBundle = () => {

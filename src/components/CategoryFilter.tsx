@@ -1,11 +1,11 @@
 import React from 'react';
 import { Search, X, SlidersHorizontal, Sparkles } from 'lucide-react';
-import { ButtonCategory } from '../types/button';
+import { CategoryFilter as CategoryFilterValue } from '../types/button';
 import { CATEGORIES } from '../data/categories';
 
 interface CategoryFilterProps {
-  activeCategory: ButtonCategory;
-  onSelectCategory: (category: ButtonCategory) => void;
+  activeCategory: CategoryFilterValue;
+  onSelectCategory: (category: CategoryFilterValue) => void;
   searchQuery: string;
   onSearchChange: (query: string) => void;
   selectedTag: string | null;

@@ -10,7 +10,7 @@ import {
   ChevronDown,
   Info
 } from 'lucide-react';
-import { ButtonCategory, CategoryFilter, ButtonDefinition } from './types/button';
+import { ButtonCategory, CategoryFilter as CategoryFilterValue, ButtonDefinition } from './types/button';
 import { BUTTON_GALLERY } from './data/buttonGallery';
 import { Header } from './components/Header';
 import { CategoryFilter } from './components/CategoryFilter';
@@ -25,7 +25,7 @@ import {
 } from './utils/storage';
 
 export default function App() {
-  const [activeCategory, setActiveCategory] = useState<CategoryFilter>('all');
+  const [activeCategory, setActiveCategory] = useState<CategoryFilterValue>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const [favoriteIds, setFavoriteIds] = useState<string[]>([]);

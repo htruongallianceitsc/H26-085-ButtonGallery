@@ -41,5 +41,5 @@ export function getSoundPreference(): boolean {
 export function setSoundPreference(enabled: boolean): void {
   try {
     localStorage.setItem(SOUND_KEY, JSON.stringify(enabled));
-  } catch {}
+  } catch { /* localStorage unavailable */ }
 }

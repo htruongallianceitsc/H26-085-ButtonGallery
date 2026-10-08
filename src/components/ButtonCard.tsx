@@ -40,7 +40,7 @@ export function ButtonCard({
       await navigator.clipboard.writeText(css);
       setCopiedType('css');
       setTimeout(() => setCopiedType(null), 2000);
-    } catch {}
+    } catch { /* clipboard unavailable */ }
   };
 
   const handleCopyHtml = async (e: React.MouseEvent) => {
@@ -50,7 +50,7 @@ export function ButtonCard({
       await navigator.clipboard.writeText(html);
       setCopiedType('html');
       setTimeout(() => setCopiedType(null), 2000);
-    } catch {}
+    } catch { /* clipboard unavailable */ }
   };
 
   const getBackgroundStyle = () => {
