@@ -1,6 +1,6 @@
 # ButtonCraft v1.3 — Button Gallery & Studio
 
-React 19 + Vite + Tailwind CSS 4. Gallery 144 interactive presets, code export, favorites and saved variants.
+React 19 + Vite + Tailwind CSS 4. Gallery 164 interactive presets, code export, favorites and saved variants.
 
 ## Local development
 
@@ -25,6 +25,11 @@ The original designs rely on custom React renderers; exported HTML/CSS uses shar
 ## Install troubleshooting (v1.1.1)
 
 Requires Node >=20.19 and npm >=10. Use `npm install`, then `npm run qa`. See `docs/V1.1.1-INSTALL-FIX.md` for environment and verification details.
+
+## What's new (v1.8)
+
+- Added 20 signature button presets, increasing the gallery from 144 to 164 styles.
+- New designs include plasma fusion energy core, cyber neon blade slash, chrono time warp gate, frosted opal gemstone glass, golden origami swan sculpt, molten iron forge anvil, electric arc shock zap, and 8-bit retro pixel life heart.
 
 ## What's new (v1.7)
 
