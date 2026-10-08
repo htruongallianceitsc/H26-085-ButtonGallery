@@ -7,11 +7,12 @@ import { v15SignaturePresets } from '../presets/v15-signature-collection';
 import { v16SignaturePresets } from '../presets/v16-signature-collection';
 import { v17SignaturePresets } from '../presets/v17-signature-collection';
 import { v18SignaturePresets } from '../presets/v18-signature-collection';
+import { v19SignaturePresets } from '../presets/v19-signature-collection';
 
 describe('ButtonCraft preset/export contract', () => {
-  it('contains 164 uniquely named presets', () => {
-    expect(BUTTON_GALLERY).toHaveLength(164);
-    expect(new Set(BUTTON_GALLERY.map(x => x.id)).size).toBe(164);
+  it('contains 184 uniquely named presets', () => {
+    expect(BUTTON_GALLERY).toHaveLength(184);
+    expect(new Set(BUTTON_GALLERY.map(x => x.id)).size).toBe(184);
   });
 
   it('adds exactly 20 v1.3 signature presets', () => {
@@ -42,6 +43,11 @@ describe('ButtonCraft preset/export contract', () => {
   it('adds exactly 20 v1.8 signature presets', () => {
     expect(v18SignaturePresets).toHaveLength(20);
     expect(new Set(v18SignaturePresets.map(x => x.id)).size).toBe(20);
+  });
+
+  it('adds exactly 20 v1.9 signature presets', () => {
+    expect(v19SignaturePresets).toHaveLength(20);
+    expect(new Set(v19SignaturePresets.map(x => x.id)).size).toBe(20);
   });
 
   for (const preset of BUTTON_GALLERY) {
