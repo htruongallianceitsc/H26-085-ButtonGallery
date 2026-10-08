@@ -44,6 +44,7 @@ import { preset as material_fab_elevation_ripple } from '../presets/material-fab
 import { preset as material_outlined_underglow } from '../presets/material-outlined-underglow';
 import { v13SignaturePresets } from '../presets/v13-signature-collection';
 import { v14SignaturePresets } from '../presets/v14-signature-collection';
+import { v15SignaturePresets } from '../presets/v15-signature-collection';
 import { enhancePreset } from '../button-engine/enhance';
 export const BUTTON_GALLERY = [
   enhancePreset(cyber_glitch_polygon),
@@ -92,4 +93,5 @@ export const BUTTON_GALLERY = [
   enhancePreset(material_outlined_underglow),
   ...v13SignaturePresets.map(enhancePreset),
   ...v14SignaturePresets.map(enhancePreset),
+  ...v15SignaturePresets.map(enhancePreset),
 ];
