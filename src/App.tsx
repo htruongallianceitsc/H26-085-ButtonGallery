@@ -17,6 +17,7 @@ import { CategoryFilter } from './components/CategoryFilter';
 import { ButtonCard } from './components/ButtonCard';
 import { CustomizerModal } from './components/CustomizerModal';
 import { FavoritesDrawer } from './components/FavoritesDrawer';
+import { Pagination } from './components/Pagination';
 import {
   getFavoriteIds,
   toggleFavoriteId,
@@ -32,6 +33,9 @@ export default function App() {
   const [selectedCustomButton, setSelectedCustomButton] = useState<ButtonDefinition | null>(null);
   const [isFavoritesOpen, setIsFavoritesOpen] = useState(false);
   const [soundEnabled, setSoundEnabled] = useState(true);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const ITEMS_PER_PAGE = 20;
 
   // Load preferences from localStorage on mount
   useEffect(() => {
@@ -91,6 +95,27 @@ export default function App() {
       return true;
     });
   }, [activeCategory, selectedTag, searchQuery]);
+
+  // Reset to first page whenever the filtered result set changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [activeCategory, selectedTag, searchQuery]);
+
+  const totalPages = Math.max(1, Math.ceil(filteredButtons.length / ITEMS_PER_PAGE));
+
+  const paginatedButtons = useMemo(() => {
+    const start = (currentPage - 1) * ITEMS_PER_PAGE;
+    return filteredButtons.slice(start, start + ITEMS_PER_PAGE);
+  }, [filteredButtons, currentPage]);
+
+  const handlePageChange = (page: number) => {
+    const clamped = Math.min(Math.max(1, page), totalPages);
+    setCurrentPage(clamped);
+    const galleryEl = document.getElementById('gallery-section');
+    if (galleryEl) {
+      galleryEl.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   const openCustomizer = (button: ButtonDefinition) => {
     window.history.pushState({ buttonId: button.id }, '', `?button=${encodeURIComponent(button.id)}`);
@@ -217,18 +242,25 @@ export default function App() {
             </button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredButtons.map((button) => (
-              <ButtonCard
-                key={button.id}
-                button={button}
-                isFavorited={favoriteIds.includes(button.id)}
-                onToggleFavorite={handleToggleFavorite}
-                onOpenCustomizer={openCustomizer}
-                soundEnabled={soundEnabled}
-              />
-            ))}
-          </div>
+          <>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {paginatedButtons.map((button) => (
+                <ButtonCard
+                  key={button.id}
+                  button={button}
+                  isFavorited={favoriteIds.includes(button.id)}
+                  onToggleFavorite={handleToggleFavorite}
+                  onOpenCustomizer={openCustomizer}
+                  soundEnabled={soundEnabled}
+                />
+              ))}
+            </div>
+            <Pagination
+              currentPage={currentPage}
+              totalPages={totalPages}
+              onPageChange={handlePageChange}
+            />
+          </>
         )}
       </main>
 
