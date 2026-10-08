@@ -1,0 +1,88 @@
+import { CategoryInfo } from '../types/button';
+
+export const CATEGORIES: CategoryInfo[] = [
+  {
+    id: 'all',
+    name: 'Tất cả kiểu dáng',
+    enName: 'All Styles',
+    description: 'Toàn bộ thư viện nút bấm với đủ mọi trường phái thiết kế',
+    iconName: 'Layers',
+  },
+  {
+    id: 'cyberpunk',
+    name: 'Cyberpunk & Sci-Fi',
+    enName: 'Cyberpunk & Sci-Fi',
+    description: 'Góc vát đa giác, scanline, hiệu ứng glitch quang học và viền neon vị lai',
+    iconName: 'Cpu',
+  },
+  {
+    id: 'glass',
+    name: 'Glassmorphism',
+    enName: 'Glass & Frosted',
+    description: 'Kính mờ xuyên thấu, ánh phản quang quang học và viền gradient lăng kính',
+    iconName: 'Sparkles',
+  },
+  {
+    id: 'skeuomorphic-3d',
+    name: '3D Cơ học & Tactile',
+    enName: '3D Pushable & Haptic',
+    description: 'Mô phỏng phím cơ Cherry MX, nút bấm có độ sâu vật lý chân thực',
+    iconName: 'Layers',
+  },
+  {
+    id: 'brutalist',
+    name: 'Neo-Brutalism',
+    enName: 'Neo-Brutalist',
+    description: 'Viền đen đậm nét 3px, đổ bóng vuông cứng cáp và gam màu tương phản bộc phát',
+    iconName: 'Terminal',
+  },
+  {
+    id: 'neumorphic',
+    name: 'Neumorphism (Soft UI)',
+    enName: 'Neumorphism',
+    description: 'Đổ bóng nổi/lõm mềm mịn êm ái tạo cảm giác đúc liền khối nguyên bản',
+    iconName: 'Layers',
+  },
+  {
+    id: 'aurora-gradient',
+    name: 'Aurora & Viền phát sáng',
+    enName: 'Aurora & Border Glow',
+    description: 'Dải sáng chạy quanh viền 360 độ, gradient cực quang mượt mà chuyển động',
+    iconName: 'Zap',
+  },
+  {
+    id: 'luxury-minimal',
+    name: 'Tối giản Sang trọng',
+    enName: 'Minimal Luxury',
+    description: 'Đường nét hairline thanh lịch, giãn chữ tracking rộng, ánh kim loại gold',
+    iconName: 'Star',
+  },
+  {
+    id: 'retro-pixel',
+    name: 'Retro 8-Bit Arcade',
+    enName: 'Retro 8-Bit Pixel',
+    description: 'Nút bấm máy game thùng hoài niệm, viền pixel xếp khối và font 8-bit',
+    iconName: 'Play',
+  },
+  {
+    id: 'micro-interactive',
+    name: 'Micro-Interactions',
+    enName: 'Interactive Motion',
+    description: 'Hiệu ứng gợn sóng Ripple, nam châm hút chuột, icon trượt chuyển động',
+    iconName: 'Flame',
+  },
+  {
+    id: 'playful-bubbly',
+    name: 'Bong bóng & Jelly',
+    enName: 'Playful Jelly',
+    description: 'Độ đàn hồi nhún nhảy mềm xốp khi click, hiệu ứng thạch dẻo ngộ nghĩnh',
+    iconName: 'Heart',
+  },
+  {
+    id: 'tech-outline',
+    name: 'Dòng lệnh & Ghost Tech',
+    enName: 'Tech Outline & Ghost',
+    description: 'Khung ngắm HUD, dấu ngoặc terminal prompt, nét đứt xung điện',
+    iconName: 'Terminal',
+  },
+];
