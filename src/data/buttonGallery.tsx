@@ -42,6 +42,7 @@ import { preset as playful_doodle_wobble_border } from '../presets/playful-doodl
 import { preset as tech_radar_sweep_lock } from '../presets/tech-radar-sweep-lock';
 import { preset as material_fab_elevation_ripple } from '../presets/material-fab-elevation-ripple';
 import { preset as material_outlined_underglow } from '../presets/material-outlined-underglow';
+import { preset as inferno_blazing_fire } from '../presets/inferno-blazing-fire';
 import { v13SignaturePresets } from '../presets/v13-signature-collection';
 import { v14SignaturePresets } from '../presets/v14-signature-collection';
 import { v15SignaturePresets } from '../presets/v15-signature-collection';
@@ -95,6 +96,7 @@ export const BUTTON_GALLERY = [
   enhancePreset(tech_radar_sweep_lock),
   enhancePreset(material_fab_elevation_ripple),
   enhancePreset(material_outlined_underglow),
+  enhancePreset(inferno_blazing_fire),
   ...v13SignaturePresets.map(enhancePreset),
   ...v14SignaturePresets.map(enhancePreset),
   ...v15SignaturePresets.map(enhancePreset),
