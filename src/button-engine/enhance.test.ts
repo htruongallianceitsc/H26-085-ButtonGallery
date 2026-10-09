@@ -10,9 +10,9 @@ import { v18SignaturePresets } from '../presets/v18-signature-collection';
 import { v19SignaturePresets } from '../presets/v19-signature-collection';
 
 describe('ButtonCraft preset/export contract', () => {
-  it('contains 184 uniquely named presets', () => {
-    expect(BUTTON_GALLERY).toHaveLength(184);
-    expect(new Set(BUTTON_GALLERY.map(x => x.id)).size).toBe(184);
+  it('contains 185 uniquely named presets', () => {
+    expect(BUTTON_GALLERY).toHaveLength(185);
+    expect(new Set(BUTTON_GALLERY.map(x => x.id)).size).toBe(185);
   });
 
   it('adds exactly 20 v1.3 signature presets', () => {

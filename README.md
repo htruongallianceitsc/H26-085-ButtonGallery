@@ -1,6 +1,6 @@
 # ButtonCraft v1.3 — Button Gallery & Studio
 
-React 19 + Vite + Tailwind CSS 4. Gallery 184 interactive presets, code export, favorites and saved variants.
+React 19 + Vite + Tailwind CSS 4. Gallery 185 interactive presets, code export, favorites and saved variants.
 
 ## Local development
 
