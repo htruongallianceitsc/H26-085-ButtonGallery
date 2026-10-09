@@ -1,6 +1,6 @@
 # ButtonCraft v1.3 — Button Gallery & Studio
 
-React 19 + Vite + Tailwind CSS 4. Gallery 185 interactive presets, code export, favorites and saved variants.
+React 19 + Vite + Tailwind CSS 4. Gallery 205 interactive presets, code export, favorites and saved variants.
 
 ## Local development
 
@@ -25,6 +25,11 @@ The original designs rely on custom React renderers; exported HTML/CSS uses shar
 ## Install troubleshooting (v1.1.1)
 
 Requires Node >=20.19 and npm >=10. Use `npm install`, then `npm run qa`. See `docs/V1.1.1-INSTALL-FIX.md` for environment and verification details.
+
+## What's new (v2.0)
+
+- Added 20 gaming button presets using Base64 SVG Data URI frames, borders, and textures, increasing gallery total to 205 presets.
+- Includes RPG gold crest filigree, cyber HUD hexagon frames, rune stone engravings, 8-bit pixel dungeon bricks, Hextech crystal gem cores, and mecha armor plates.
 
 ## What's new (v1.9)
 

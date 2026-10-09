@@ -50,6 +50,7 @@ import { v16SignaturePresets } from '../presets/v16-signature-collection';
 import { v17SignaturePresets } from '../presets/v17-signature-collection';
 import { v18SignaturePresets } from '../presets/v18-signature-collection';
 import { v19SignaturePresets } from '../presets/v19-signature-collection';
+import { v20GamingPresets } from '../presets/v20-gaming-collection';
 import { enhancePreset } from '../button-engine/enhance';
 export const BUTTON_GALLERY = [
   enhancePreset(cyber_glitch_polygon),
@@ -104,4 +105,5 @@ export const BUTTON_GALLERY = [
   ...v17SignaturePresets.map(enhancePreset),
   ...v18SignaturePresets.map(enhancePreset),
   ...v19SignaturePresets.map(enhancePreset),
+  ...v20GamingPresets.map(enhancePreset),
 ];
