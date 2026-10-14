@@ -11,11 +11,12 @@ import { v19SignaturePresets } from '../presets/v19-signature-collection';
 import { v20GamingPresets } from '../presets/v20-gaming-collection';
 import { v21CartoonPresets } from '../presets/v21-cartoon-collection';
 import { v22FloralPresets } from '../presets/v22-floral-collection';
+import { v23SvgArtworkPresets } from '../presets/v23-svg-artwork-collection';
 
 describe('ButtonCraft preset/export contract', () => {
-  it('contains 245 uniquely named presets', () => {
-    expect(BUTTON_GALLERY).toHaveLength(245);
-    expect(new Set(BUTTON_GALLERY.map(x => x.id)).size).toBe(245);
+  it('contains 265 uniquely named presets', () => {
+    expect(BUTTON_GALLERY).toHaveLength(265);
+    expect(new Set(BUTTON_GALLERY.map(x => x.id)).size).toBe(265);
   });
 
   it('adds exactly 20 v1.3 signature presets', () => {
@@ -66,6 +67,11 @@ describe('ButtonCraft preset/export contract', () => {
   it('adds exactly 20 v2.2 floral presets', () => {
     expect(v22FloralPresets).toHaveLength(20);
     expect(new Set(v22FloralPresets.map(x => x.id)).size).toBe(20);
+  });
+
+  it('adds exactly 20 v2.3 SVG artwork presets', () => {
+    expect(v23SvgArtworkPresets).toHaveLength(20);
+    expect(new Set(v23SvgArtworkPresets.map(x => x.id)).size).toBe(20);
   });
 
   for (const preset of BUTTON_GALLERY) {

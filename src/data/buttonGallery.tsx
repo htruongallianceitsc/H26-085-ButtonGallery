@@ -53,6 +53,7 @@ import { v19SignaturePresets } from '../presets/v19-signature-collection';
 import { v20GamingPresets } from '../presets/v20-gaming-collection';
 import { v21CartoonPresets } from '../presets/v21-cartoon-collection';
 import { v22FloralPresets } from '../presets/v22-floral-collection';
+import { v23SvgArtworkPresets } from '../presets/v23-svg-artwork-collection';
 import { enhancePreset } from '../button-engine/enhance';
 export const BUTTON_GALLERY = [
   enhancePreset(cyber_glitch_polygon),
@@ -110,4 +111,5 @@ export const BUTTON_GALLERY = [
   ...v20GamingPresets.map(enhancePreset),
   ...v21CartoonPresets.map(enhancePreset),
   ...v22FloralPresets.map(enhancePreset),
+  ...v23SvgArtworkPresets.map(enhancePreset),
 ];

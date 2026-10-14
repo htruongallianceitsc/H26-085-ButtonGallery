@@ -1,6 +1,6 @@
-# ButtonCraft v2.2 — Button Gallery & Studio
+# ButtonCraft v2.3 — Button Gallery & Studio
 
-React 19 + Vite + Tailwind CSS 4. Gallery 245 interactive presets, code export, favorites and saved variants.
+React 19 + Vite + Tailwind CSS 4. Gallery 265 interactive presets, code export, favorites and saved variants.
 
 ## Local development
 
@@ -25,6 +25,11 @@ The original designs rely on custom React renderers; exported HTML/CSS uses shar
 ## Install troubleshooting (v1.1.1)
 
 Requires Node >=20.19 and npm >=10. Use `npm install`, then `npm run qa`. See `docs/V1.1.1-INSTALL-FIX.md` for environment and verification details.
+
+## What's new (v2.3)
+
+- Added 20 custom SVG vector artwork button presets, increasing gallery total to 265 presets.
+- Includes cyber neon hexagon frames, baroque gold filigree, tribal flame wings, constellation star maps, PCB circuit microchips, low-poly origami foxes, gothic cathedral arches, steampunk gears, Great Wave contours, Aztec sun calendars, Art Deco Gatsby lines, Celtic knots, crystal geode shards, biohazard shields, synthwave grids, sacred geometry mandalas, galaxy nebulae, phoenix wings, knight shields, and Mecha Gundam HUDs.
 
 ## What's new (v2.2)
 
