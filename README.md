@@ -1,6 +1,6 @@
-# ButtonCraft v2.1 — Button Gallery & Studio
+# ButtonCraft v2.2 — Button Gallery & Studio
 
-React 19 + Vite + Tailwind CSS 4. Gallery 225 interactive presets, code export, favorites and saved variants.
+React 19 + Vite + Tailwind CSS 4. Gallery 245 interactive presets, code export, favorites and saved variants.
 
 ## Local development
 
@@ -25,6 +25,11 @@ The original designs rely on custom React renderers; exported HTML/CSS uses shar
 ## Install troubleshooting (v1.1.1)
 
 Requires Node >=20.19 and npm >=10. Use `npm install`, then `npm run qa`. See `docs/V1.1.1-INSTALL-FIX.md` for environment and verification details.
+
+## What's new (v2.2)
+
+- Added 20 floral/flower-themed button presets, increasing gallery total to 245 presets.
+- Includes Sakura cherry blossom pink, golden sunflower, royal rose gold velvet, sacred lotus zen, lavender mist, emerald ivy vines, wild orchid magenta glow, white daisy meadow, and enchanted fairy flora.
 
 ## What's new (v2.1)
 
