@@ -1,6 +1,6 @@
-# ButtonCraft v1.3 — Button Gallery & Studio
+# ButtonCraft v2.1 — Button Gallery & Studio
 
-React 19 + Vite + Tailwind CSS 4. Gallery 205 interactive presets, code export, favorites and saved variants.
+React 19 + Vite + Tailwind CSS 4. Gallery 225 interactive presets, code export, favorites and saved variants.
 
 ## Local development
 
@@ -25,6 +25,11 @@ The original designs rely on custom React renderers; exported HTML/CSS uses shar
 ## Install troubleshooting (v1.1.1)
 
 Requires Node >=20.19 and npm >=10. Use `npm install`, then `npm run qa`. See `docs/V1.1.1-INSTALL-FIX.md` for environment and verification details.
+
+## What's new (v2.1)
+
+- Added 20 cartoon/anime-styled button presets, increasing gallery total to 225 presets.
+- Includes comic pop-art boom, chibi bubbly marshmallows, anime action speedlines, looney rubberhose bounce, halftone dots, POW badges, gooey green slime splats, kawaii cat paws, and TNT crates.
 
 ## What's new (v2.0)
 
